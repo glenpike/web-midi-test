@@ -11,10 +11,10 @@ Written in ~ES6 JavaScript
 
 Currently, you can control the FM synth with the following continuous controllers.
 
-10 (0xa) Pan -> 'harmonicity'
-1  (0x1) Modulation -> 'modulationIndex'
-11 (0xb) Expression -> 'modulatorShape'
-91 (0x5b) Effect 1 Depth (Reverb amount) -> 'carrierShape'
+* 10 (0xa) Pan -> 'harmonicity'
+* 1  (0x1) Modulation -> 'modulationIndex'
+* 11 (0xb) Expression -> 'modulatorShape'
+* 91 (0x5b) Effect 1 Depth (Reverb amount) -> 'carrierShape'
 
 You can change this by adjusting the control numbers which are keys of the 'map' object in main.js L14:
 ```JavaScript
