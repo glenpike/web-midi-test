@@ -71,7 +71,7 @@ const initMIDIInput = (input, map) => {
                 return;
             case 0xb0: //continuous controller.
                 const byte1 = event.data[1] & 0xff;
-                console.log(`byte1 ${byte1} (${byte1.toString(16)})`)
+                console.log(`byte1 ${byte1} (${byte1.toString(16)})`);
                 if (map[byte1]) {
                     map[byte1](event.data[2]);
                     return;
